@@ -4,46 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  rel="stylesheet" href="style2.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="functionality.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="ad-card">
-        <h3>Flat 20% Off </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div class="mainBlock">
-        <button class="help-button">Need help?</button>
-        <div class="card">
-            <img class="image" src="https://source.unsplash.com/1600x1000/?burger">
-            <!-- <div class="prom-tag">Promoted</div> -->
-            <h3>Veg Burgers</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+    <div class="parent-block">
+        <div class="app-name">Order and Eat</div>
+        <div class="ad-card">
+            <h3>Flat 20% Off </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="card">
-            <img class="image" src="https://source.unsplash.com/1600x1000/?fish-food">
-            <!-- <div class="prom-tag">Promoted</div> -->
-            <h3>Fish</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+        <div class="search">
+            <input class="search-bar" type="text" id="searchInput" placeholder="Search...">
+            <button class="search-button" id="searchButton"><img class="search-icon" src="search.png" alt=""></button>
         </div>
-        <div class="card">
-            <img class="image" src="https://source.unsplash.com/1600x1000/?pizza">
-            <h3>Pizza</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
-        </div>
-        <div class="card">
-            <img class="image" src="https://source.unsplash.com/1600x1000/?pasta">
-            <h3>Pasta</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
-        </div>
-        <div class="card">
-            <img class="image" src="https://source.unsplash.com/1600x1000/?fried-chicken">
-            <h3>Chicken</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
-        </div>
-        <div class="card">
-            <img class="image" src="https://source.unsplash.com/1600x1000/?sandwich">
-            <h3>Sandwich</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+        <div class="mainBlock">
+            <button class="help-button" id="menuButton">Menu</button>
+            <ul id="menu" class="menu-hidden menu">
+                <li class="list-item" id="item-1" href="">Recommended</li>
+                <li class="list-item" id="item-2">Breakfast</li>
+                <li class="list-item" id="item-3">Tea/Coffee</li>
+                <li class="list-item" id="item-4">Desserts</li>
+                <li class="list-item" id="item-5">Snacks</li>
+            </ul>
+            <div class="card burger">
+                <img class="image" src="https://source.unsplash.com/1600x1000/?burger">
+                <!-- <div class="prom-tag">Promoted</div> -->
+                <h3>Veg Burgers</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+            </div>
+            <div class="card">
+                <img class="image" src="https://source.unsplash.com/1600x1000/?fish-food">
+                <!-- <div class="prom-tag">Promoted</div> -->
+                <h3>Fish</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+            </div>
+            <div class="card">
+                <img class="image" src="https://source.unsplash.com/1600x1000/?pizza">
+                <h3>Pizza</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+            </div>
+            <div class="card">
+                <img class="image" src="https://source.unsplash.com/1600x1000/?pasta">
+                <h3>Pasta</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+            </div>
+            <div class="card">
+                <img class="image" src="https://source.unsplash.com/1600x1000/?fried-chicken">
+                <h3>Chicken</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+            </div>
+            <div class="card">
+                <img class="image" src="https://source.unsplash.com/1600x1000/?desserts">
+                <h3>Desserts</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+            </div>
+            <div class="card">
+                <img class="image" src="https://source.unsplash.com/1600x1000/?snacks">
+                <h3>Snacks</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+            </div>
+            <div class="card">
+                <img class="image" src="https://source.unsplash.com/1600x1000/?sandwich">
+                <h3>Sandwich</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+            </div>
         </div>
     </div>
 </body>
