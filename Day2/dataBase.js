@@ -42,6 +42,8 @@
 
 const express = require('express');
 const bodyParser = require('body-parser'); // Middleware to parse POST data
+// Add this before your route definitions
+app.use(express.static('public'));
 
 const app = express();
 const PORT = 3000;
@@ -59,6 +61,12 @@ app.post('/login', (req, res) => {
         res.status(401).json({ message: 'Invalid credentials' });
     }
 });
+
+// Add this after your existing route
+app.get('/', (req, res) => {
+    res.send('Welcome to the login page');
+});
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
