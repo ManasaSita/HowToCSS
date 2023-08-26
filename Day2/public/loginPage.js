@@ -3,16 +3,37 @@ $(document).ready(function () {
     let password = $(".passwordInput").val();
 
     console.log("email & password", username, password);
+
     $("#loginForm").submit(function() {
         event.preventDefault();
         if (username != null && password != null){
-            window.location.href = "index2.html";
+            setTimeout(function() {
+                window.location.href = "index2.html"; 
+            }, 2000);
         }  else {
             alert("Invalid login credentials. Please try again.");
         }
+    });
+
+    $("#loginButton").click(function() {
+        // event.preventDefault();
+        console.log($(this));
+        $(this).css("background-color", "black");
+        $(this).css("color", "white");
     })
 
-    // $.post('/login', { username, password })
+   
+});
+
+
+
+
+
+
+
+
+
+ // $.post('/login', { username, password })
     //     .done(function(response) {
     //         alert(response.message);
     //         if (response.message === 'Login successful') {
@@ -25,7 +46,6 @@ $(document).ready(function () {
     //         alert('An error occurred');
     //         // window.location.href = 'index2.html';
     //     });
-});
 
 // $(document).ready(function () {
 //     $("#loginForm").submit(function(event) {
