@@ -134,65 +134,77 @@
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 }
+.login {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.png'); /* Replace with your image file path */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: round;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 
-.main {
-    background-color: #ff8622;
+    .main {
+        margin-top: 145px;
+        height: 100vh;
 
-    .loginPage {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        .app-logo {
-            color: white;
-            font-family: cursive;
-            margin: auto;
-            padding: 50px;
-            font-size: 59px;
-        }
-    
-        .welcome-tag {
-            font-family: sans-serif;
-            font-size: 20px;
-            padding: 20px;
-        }
-    
-        .form {
+        .loginPage {
             display: flex;
             flex-direction: column;
-            width: 40%;
-    
-            .inputs {
-                margin: 10px;
-                padding: 19px;
-                border: 1px solid white;
-                border-radius: 30px;
-                color: black;
-            }
-
-            .inputs::placeholder {
+            align-items: center;
+        
+            .app-logo {
+                color: white;
+                font-family: cursive;
                 margin: auto;
-                color: rgb(128, 128, 128);
-                font-size: 15px;
+                padding: 10px;
+                font-size: 59px;
+            }
+        
+            .welcome-tag {
+                font-family: cursive;
+                font-size: 37px;
+                color: white;
+            }
+        
+            .form {
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+        
+                .inputs {
+                    margin: 10px;
+                    padding: 19px;
+                    border: 1px solid white;
+                    border-radius: 30px;
+                    color: black;
+                }
+
+                .inputs::placeholder {
+                    margin: auto;
+                    color: rgb(128, 128, 128);
+                    font-size: 15px;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+        
+                .loginButton {
+                    width: 50%;
+                    margin: auto;
+                    padding: 16px;
+                    background-color: white;
+                    border: none;
+                    border-radius: 30px;
+                    font-size: 20px;
+                    margin-top: 20px;
+                    cursor: pointer;
+                }
+        
+            }
+        
+            .error-message {
+                color: white;
+                font-size: 10px;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
-    
-            .loginButton {
-                width: 50%;
-                margin: auto;
-                padding: 16px;
-                background-color: white;
-                border: none;
-                border-radius: 30px;
-                font-size: 20px;
-                margin-top: 20px;
-                cursor: pointer;
-            }
-    
-        }
-    
-        .forgot-password {
-    
         }
     }
 }
