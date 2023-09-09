@@ -6,10 +6,12 @@
     <link  rel="stylesheet" href="style2.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script  src="restaurantsList.js"></script>
+    <script src="global.js"></script>
     <title>Order 'n Eat : Restaurants List</title>
 </head>
 <body>
-    <ul class="restaurantsList" id="burger">
+    <ul class="restaurantsList" id="junk">
+        <div onload="getDish()"></div>
         <li>Peppa Zzing, Infantary Road, Bengaluru</li>
         <li>Hard Rock Cafe, Ashok Nagar, Bengaluru</li>
         <li>The Only Place, Ashok Nagar, Bengaluru</li>
@@ -19,6 +21,7 @@
         <li>Once Upon A Flame, HSR, Bengaluru</li>
     </ul>
     <ul class="restaurantsList" id="breakfast">
+        <div id="dish-breakfast"></div>
         <li>Udupi upahar, Bengaluru</li>
         <li>Asha Tiffins, Bengaluru</li>
         <li>Savi Ruchi, Bengaluru</li>

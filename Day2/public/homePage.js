@@ -75,7 +75,31 @@
 // });
 
 function openPageWithID(clickedElement) {
-    window.location.href = `restaurantsList.html?id=${clickedElement.id}`;
+    let junk = ["burger", "fish", "pizza", "pasta", "chicken", "sandwich"];
+    let breakfast = ["idli", "dosa", "vada", "upma", "roti", "rice"];
+    let sideDish = ["desserts", "snacks"];
+    let id = clickedElement.id;
+    let food;
+
+    localStorage.setItem("id", id);
+
+    if(junk.includes(id)) {
+        food = "junk";
+    } else if (breakfast.includes(id)){
+        food = "breakfast";
+    } else if (sideDish.includes(id)) {
+        food = "sideDish";
+    } else {
+        food = null;
+    }
+
+    if (food) {
+        window.location.href = `restaurantsList.html?id=${food}`;
+    } else {
+        alert("Oops! No results found.");
+        window.location.href = `errorPage.html`;
+    }
+    
 }
 
 document.addEventListener("DOMContentLoaded", function () {
