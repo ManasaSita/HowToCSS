@@ -6,6 +6,7 @@
     <link  rel="stylesheet" href="style2.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="homePage.js"></script>
+    <script src="global.js"></script>
     <title>Order 'n Eat: Home</title>
 </head>
 <body>
@@ -30,39 +31,34 @@
             </ul>
             <h2 class="cusin">Breakfast</h2>
             <div class="dish-list" id="breakfast">
-                <div class="card" id="idli">
+                <div class="card" id="idli" onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?idli">
                     <!-- <div class="prom-tag">Promoted</div> -->
                     <h3>Idli</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
-                <div class="card" id="dosa">
+                <div class="card" id="dosa" onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?masaladosa">
-                    <!-- <div class="prom-tag">Promoted</div> -->
                     <h3>Dosa</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
-                <div class="card" id="vada">
+                <div class="card" id="vada" onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?vada">
-                    <!-- <div class="prom-tag">Promoted</div> -->
                     <h3>Vade</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
-                <div class="card" id="upma">
+                <div class="card" id="upma" onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?upma">
-                    <!-- <div class="prom-tag">Promoted</div> -->
                     <h3>Upma</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
-                <div class="card" id="roti">
+                <div class="card" id="roti"  onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?roti">
-                    <!-- <div class="prom-tag">Promoted</div> -->
                     <h3>Rotis</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
-                <div class="card" id="rice">
-                    <img class="image" src="https://source.unsplash.com/1600x1000/?lemon-rice">
-                    <!-- <div class="prom-tag">Promoted</div> -->
+                <div class="card" id="rice"  onclick="openPageWithID(this)">
+                    <img class="image" src="https://source.unsplash.com/1600x1000/?rice">
                     <h3>Rice dish</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
@@ -71,44 +67,45 @@
             <div class="dish-list" id="junk-food">
                 <div class="card burger" id="burger" onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?burger">
-                    <!-- <div class="prom-tag">Promoted</div> -->
                     <h3>Veg Burgers</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
-                <div class="card" id="fish">
+                <div class="card" id="fish"  onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?fish-food">
-                    <!-- <div class="prom-tag">Promoted</div> -->
                     <h3>Fish</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
-                <div class="card" id="pizza">
+                <div class="card" id="pizza"  onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?pizza">
                     <h3>Pizza</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
-                <div class="card" id="pasta">
+                <div class="card" id="pasta"  onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?pasta">
                     <h3>Pasta</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
-                <div class="card" id="chicken">
+                <div class="card" id="chicken"  onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?fried-chicken">
                     <h3>Chicken</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
-                <div class="card" id="desserts">
+                <div class="card" id="sandwich"  onclick="openPageWithID(this)">
+                    <img class="image" src="https://source.unsplash.com/1600x1000/?sandwich">
+                    <h3>Sandwich</h3>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
+                </div>
+            </div>
+            <h2 class="cusin">Desserts 'n Beverages</h2>
+            <div class="dish-list" id="sweet&salt">
+                <div class="card" id="desserts"  onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?desserts">
                     <h3>Desserts</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
-                <div class="card" id="snacks">
+                <div class="card" id="snacks"  onclick="openPageWithID(this)">
                     <img class="image" src="https://source.unsplash.com/1600x1000/?snacks">
                     <h3>Snacks</h3>
-                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
-                </div>
-                <div class="card" id="sandwich">
-                    <img class="image" src="https://source.unsplash.com/1600x1000/?sandwich">
-                    <h3>Sandwich</h3>
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, libero!</p>
                 </div>
             </div>

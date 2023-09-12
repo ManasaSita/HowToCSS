@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <script src="homePage2.js" defer></script>
+    <title>Order 'n Eat: Home</title>
+</head>
+<body>
+    <div class="parent-block">
+        <div class="app-name">Order and Eat</div>
+        <div class="search">
+            <input class="search-bar" type="text" id="searchInput" placeholder="Search...">
+            <button class="search-button" id="searchButton"><img class="search-icon" src="search.png" alt=""></button>
+        </div>
+        <div class="mainBlock">
+            <button class="help-button" id="menuButton">Menu</button>
+            <ul id="menu" class="menu-hidden menu">
+                <li class="list-item" data-cuisine="junk">Pizza/Burger</li>
+                <li class="list-item" data-cuisine="breakfast">Breakfast</li>
+                <li class="list-item" data-cuisine="non-veg">Non-Veg</li>
+                <li class="list-item" data-cuisine="desserts">Desserts</li>
+                <li class="list-item" data-cuisine="snacks">Snacks</li>
+            </ul>
+            <div class="dish-list" id="breakfast">
+                <!-- Cards for Breakfast -->
+                <h2 class="cusin">Breakfast</h2>
+            </div>
+            <div class="dish-list" id="junk-food">
+                <!-- Cards for Pizza/Burger -->
+                <h2 class="cusin">Pizza/Burger</h2>
+            </div>
+            <div class="dish-list" id="sweet&salt">
+                <!-- Cards for Desserts & Snacks -->
+                <h2 class="cusin">Desserts & Snacks</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
