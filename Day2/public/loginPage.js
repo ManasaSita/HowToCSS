@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Invalid Password!");
             return;
         } else {
-            window.location.href = "homePage.html";
+            window.location.href = "homePage2.html";
             alert(`Logged in with email: ${email}`);
         }
     });

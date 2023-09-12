@@ -1,12 +1,13 @@
-let dish = localStorage.getItem("id");
+let dishId = localStorage.getItem("id");
+console.log("dish", dishId);
 
-function getDish(dish) {
+function getDish(dishId) {
     var newElement = document.createElement("h2");
 
     // Get the current <ul> element's id
     var currentULId = document.querySelector(".restaurantsList").id;
 
-    newElement.textContent = toProperCase(dish);
+    newElement.textContent = toProperCase(dishId);
 
     // Get a reference to the current <div> element with the corresponding id
     var container = document.getElementById("dish-" + currentULId);
